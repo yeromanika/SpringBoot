@@ -45,9 +45,4 @@ public class UserServiceImpl implements UserService {
         userDao.deleteById(id);
     }
 
-    // Пример дополнительного метода
-    @Override
-    public User getUserByEmail(String email) {
-        return userDao.findByEmail(email);
-    }
 }
