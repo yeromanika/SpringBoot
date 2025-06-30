@@ -43,11 +43,4 @@ public class UserController {
         userService.deleteUser(id);
         return "redirect:/users";
     }
-
-    // Пример нового endpoint'а
-    @GetMapping("/by-email")
-    @ResponseBody
-    public User getUserByEmail(@RequestParam String email) {
-        return userService.getUserByEmail(email);
-    }
 }
