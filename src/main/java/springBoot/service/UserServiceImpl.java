@@ -37,7 +37,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void updateUser(User user) {
-        // В Spring Data JPA save() работает и для создания, и для обновления
         userDao.save(user);
     }
 
